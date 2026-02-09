@@ -8,12 +8,12 @@ import Celebration from "./components/Celebration"
 import HappyBirthday from "./components/HappyBirthday"
 import PhotoGallery from "./components/PhotoGallery"
 import Letter from "./components/Letter"
+import BackgroundMusic from "./components/BackgroundMusic"
 import { motion } from "motion/react"
 
 export default function BirthdayApp() {
   const [currentScreen, setCurrentScreen] = useState(0)
   const [isLoading, setIsLoading] = useState(true)
-  const audioRef = useRef(null)
   const [musicStarted, setMusicStarted] = useState(false)
 
   const birthdayDate = new Date("2026-01-30T00:00:00")
@@ -22,10 +22,6 @@ export default function BirthdayApp() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false)
-      // Start music after loading
-      if (audioRef.current) {
-        audioRef.current.play().catch(e => console.log('Audio play failed:', e))
-      }
     }, 4000)
     return () => clearTimeout(timer)
   }, [])
@@ -63,12 +59,7 @@ export default function BirthdayApp() {
       </AnimatePresence>
 
       {/* Background Music */}
-      <audio
-        ref={audioRef}
-        src="/music/Diamond Ni Jigar Saraiya 320 Kbps.mp3"
-        loop
-        preload="auto"
-      />
+      <BackgroundMusic start={musicStarted} />
 
       {/* Watermark */}
       <motion.div
