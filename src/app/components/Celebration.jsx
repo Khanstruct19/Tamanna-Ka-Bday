@@ -75,7 +75,7 @@ export default function Celebration({ onNext, onMusicStart }) {
                         filter: "drop-shadow(0 0 30px rgba(255,105,180,0.5))",
                     }}
                 >
-                    Time to Celebrate!
+                    Time to Celebrate virtually ml!
                 </motion.h1>
 
                 <motion.p
@@ -107,7 +107,7 @@ export default function Celebration({ onNext, onMusicStart }) {
                 >
                     <motion.div className="flex items-center space-x-2" whileTap={{ scale: 0.95 }}>
                         <Gift className="w-5 h-5" />
-                        <span className="font-semibold">Let's Celebrate!</span>
+                        <span className="font-semibold">Lessggooo!</span>
                         <Sparkles className="w-5 h-5" />
                     </motion.div>
                 </button>
