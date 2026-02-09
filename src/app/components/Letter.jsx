@@ -11,20 +11,6 @@ export default function Letter() {
     const [currentText, setCurrentText] = useState("")
     const [showCursor, setShowCursor] = useState(true)
 
-<<<<<<< HEAD
-    const letterText = `My Dearest Madam Jii,
-
-On this very special day, I want you to know how incredibly grateful I am to have you in my life. Your birthday isn't just a celebration of another year - it's a celebration of all the joy, laughter, and beautiful memories you bring to this world.
-
-You have this amazing ability to light up any room you enter, to make people smile even on their darkest days, and to spread kindness wherever you go. Your heart is pure gold, and your spirit is absolutely infectious.
-
-Thank you for being the wonderful, amazing, absolutely fantastic person that you are. The world is so much brighter because you're in it.
-
-Happy Birthday, beautiful soul! 🎂✨
-
-With all my love and warmest wishes,
-Forever Yours 💕`
-=======
     const letterText = `Tamanna... mera bachhaaa,
 
 Ik that the very special day passed, But I want you to know how incredibly grateful I am to have you in my life. Your birthday isn't just a celebration of another year... it's a celebration of all the joy, laughter, and beautiful memories you bring to this world.
@@ -50,7 +36,6 @@ Once Again Happy Belated Birthday, My beautiful soul! 🎂✨
 With all my love and warmest wishes,
 Forever Yours 💕
 In every Universe😌`
->>>>>>> cf7cbca (Update photo gallery with new images and add background music)
 
     useEffect(() => {
         if (showText) {

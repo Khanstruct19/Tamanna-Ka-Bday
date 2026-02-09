@@ -11,17 +11,12 @@ import 'swiper/css/pagination'
 export default function PhotoGallery({ onNext }) {
 
     const photos = [
-<<<<<<< HEAD
-        { id: 1, src: "/images/1.jpg" },
-        { id: 2, src: "/images/2.jpg" },
-=======
         { id: 1, src: "/images/133966.png" },
         { id: 2, src: "/images/133967.png" },
         { id: 3, src: "/images/ChatGPT%20Image%20Feb%208%2C%202026%2C%2008_40_33%20PM.png" },
         { id: 4, src: "/images/ChatGPT%20Image%20Feb%208%2C%202026%2C%2008_47_50%20PM.png" },
         { id: 5, src: "/images/ChatGPT%20Image%20Feb%208%2C%202026%2C%2008_51_10%20PM.png" },
         { id: 6, src: "/images/ChatGPT%20Image%20Feb%208%2C%202026%2C%2008_57_51%20PM.png" },
->>>>>>> cf7cbca (Update photo gallery with new images and add background music)
     ]
 
     return (
@@ -52,11 +47,7 @@ export default function PhotoGallery({ onNext }) {
                 <h1 className="text-4xl md:text-6xl py-1 md:py-2 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 mb-6">
                 Moments with You 
                 </h1>
-<<<<<<< HEAD
-                <p className="text-xl text-purple-300">Beautiful moments with Madam Jii 📸</p>
-=======
                 <p className="text-xl text-purple-300">Beautiful moments with My Precious Dalli 📸</p>
->>>>>>> cf7cbca (Update photo gallery with new images and add background music)
             </motion.div>
 
             {/* Cube Gallery */}
